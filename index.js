@@ -1,6 +1,5 @@
 const bodyParser = require("body-parser");
 const express = require("express");
-const service = require("./services/api-consumer");
 const controllers = require("./controllers");
 const app = express();
 const port = 3000;
@@ -23,5 +22,5 @@ app.get("/health", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`API listening at http://localhost:${port}`);
 });
